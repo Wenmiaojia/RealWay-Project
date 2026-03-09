@@ -1,0 +1,44 @@
+# ===============================
+# IGNORE ENTIRE REALWay-System BY DEFAULT
+# ===============================
+REALWay-System/**
+
+# Allow ONLY the working Android project
+!REALWay-System/APP Design/
+!REALWay-System/APP Design/**
+
+# But ignore build/IDE/release files inside the app
+REALWay-System/APP Design/.gradle/
+REALWay-System/APP Design/.idea/
+REALWay-System/APP Design/local.properties
+REALWay-System/APP Design/app/build/
+REALWay-System/APP Design/build/
+REALWay-System/APP Design/app/release/
+REALWay-System/APP Design/app/release/**
+REALWay-System/APP Design/app/release/baselineProfiles/**
+REALWay-System/APP Design/app/captures/
+REALWay-System/APP Design/app/.externalNativeBuild/
+REALWay-System/APP Design/app/.cxx/
+
+# Ignore large assets outside APP Design
+REALWay-System/**/*.mp4
+REALWay-System/**/*.zip
+REALWay-System/**/*.dm
+
+# ===============================
+# FASTAPI BACKEND
+# ===============================
+RealWay back End/__pycache__/
+RealWay back End/.venv/
+RealWay back End/*.pyc
+RealWay back End/*.db
+RealWay back End/*.sqlite3
+RealWay back End/logs/
+
+# ===============================
+# GENERAL IGNORE
+# ===============================
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log

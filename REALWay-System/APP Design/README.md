@@ -1,0 +1,1 @@
+This folder cotains the code to re-create REALWay APP. The app was designed using Android Studio usign JetCompose package. Retroit Client was used to send HTTP Post messages to the server and OkHttpClient for real time naviagtion updates using WebSockets.
