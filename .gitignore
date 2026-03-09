@@ -3,6 +3,8 @@
 # ===============================
 REALWay-System/**
 
+# Allow traversal into REALWay-System (so negations can work)
+!REALWay-System/
 # Allow ONLY the working Android project
 !REALWay-System/APP Design/
 !REALWay-System/APP Design/**
@@ -20,20 +22,25 @@ REALWay-System/APP Design/app/captures/
 REALWay-System/APP Design/app/.externalNativeBuild/
 REALWay-System/APP Design/app/.cxx/
 
-# Ignore large assets outside APP Design
+# Ignore large assets elsewhere in REALWay-System
 REALWay-System/**/*.mp4
 REALWay-System/**/*.zip
 REALWay-System/**/*.dm
 
 # ===============================
-# FASTAPI BACKEND
+# FASTAPI BACKEND (renamed to realway-backend)
 # ===============================
-RealWay back End/__pycache__/
-RealWay back End/.venv/
-RealWay back End/*.pyc
-RealWay back End/*.db
-RealWay back End/*.sqlite3
-RealWay back End/logs/
+# Python bytecode & caches (global)
+__pycache__/
+*.pyc
+
+# Backend-specific ignores
+realway-backend/__pycache__/
+realway-backend/.venv/
+realway-backend/*.pyc
+realway-backend/*.db
+realway-backend/*.sqlite3
+realway-backend/logs/
 
 # ===============================
 # GENERAL IGNORE
